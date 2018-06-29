@@ -1,13 +1,9 @@
-#!/usr/bin/python
-#from __future__ import print_function
 import sys
 import json
 import time
 from gpiozero import MotionSensor
 from signal import pause
 
-#def eprint(*args, **kwargs):
-#    print(*args, file=sys.stderr, **kwargs)
 	
 pin = 4
 bn = ""
@@ -26,4 +22,4 @@ if len(sys.argv) == 3:
 	print("ready for events")
 	pause()
 else:
-	eprint("usage: python motionsensor.py <device pin> <basename>")
+	print("usage: python motionsensor.py <device pin> <basename>")
